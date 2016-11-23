@@ -18,8 +18,8 @@ public class Warrior extends Character{
         strength = 100;
         defense = 40;
         attRating = 0.4;
-        DEFENSE = defense;
-        ATTRATING = attRating;
+        // DEFENSE = defense;
+        // ATTRATING = attRating;
     }
         
     public String about() {

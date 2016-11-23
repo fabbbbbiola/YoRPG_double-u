@@ -12,9 +12,20 @@ public abstract class Character{
     protected int strength;
     protected int defense;
     protected double attRating;
+    
+    /*========================
+No longer necessary because each subclass will have its own normalize and
+specialize methods:
+
     protected int DEFENSE;
     protected double ATTRATING;
+
+
+We never used this variable:
+
     protected String information;
+    ========================*/
+    
 
     public boolean isAlive(){
 

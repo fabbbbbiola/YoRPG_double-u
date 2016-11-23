@@ -22,11 +22,10 @@ public class Warrior extends Character{
         ATTRATING = attRating;
     }
         
-    public static String getInfo() {
-        String s;
-        s = "The warrior is imbued with a sword, a shield and a healthy ";
-        s += "heaping of courage.";
-        return s;
+    public String about() {
+        information = "The warrior is imbued with a sword, a shield and a ";
+        information += "healthy heaping of courage.";
+        return information;
     }
     
     

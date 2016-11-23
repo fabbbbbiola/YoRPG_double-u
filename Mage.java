@@ -24,6 +24,13 @@ public class Mage extends Character{
         information += "magical staff, and a cool hat.";
         return information;
     }
-    
+    public void specialize() {
+	defense = 30;
+	attRating = 2.4;
+    }
+    public void normalize() {
+	defense = 60;
+	attRating = 1.3;
+    }
 
 }

@@ -14,16 +14,15 @@ public class Monster extends Character{
 
         HP = 150;
         strength = 20 + (int)(Math.random()*45); //20 thru 65
-        defense = 20
+        defense = 20;
         attRating = 1;
     }
     
     
-    public static String about() {
-        String s;
-        s = "The monster terrorizes and lays waste to the kingdom you ";
-        s += "hold dear. Slay it.";
-        return s;
+    public String about() {
+        information = "The monster terrorizes and lays waste to the kingdom ";
+        information += "you hold dear. Slay it.";
+        return information;
     }
     
     public String getName() {

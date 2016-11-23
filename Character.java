@@ -19,12 +19,10 @@ specialize methods:
 
     protected int DEFENSE;
     protected double ATTRATING;
-
-
-We never used this variable:
+ ========================*/
 
     protected String information;
-    ========================*/
+   
     
 
     public boolean isAlive(){

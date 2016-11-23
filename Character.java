@@ -5,7 +5,7 @@
 // 2016-11-19
 
 
-public class Character{
+public abstract class Character{
 
     protected String name;
     protected int HP;
@@ -49,24 +49,22 @@ public class Character{
 	
     }
     
-    public void specialize() {
+    public abstract void specialize(); /* {
         
         attRating = ATTRATING*(Math.random()+1.0);
 	    defense = DEFENSE*(int)(Math.random()+1.0);
        
-    }
+	    } */
     
-    public void normalize() {
+    public abstract void normalize(); /* {
         
         defense = DEFENSE;   
         attRating = ATTRATING;
         
-    }
+	} */
     
-    /*
-    public static String about(Character c){
+    public abstract String about(); /* {
         //lets us write the about text in each specific class as we create them
         return ((Character)c).getInfo();
-    }
-    */
+	} */
 }

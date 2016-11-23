@@ -1,8 +1,8 @@
 // Team double u
 // Gian Tricarico, Fabiola Radosav, James Zhang
 // APCS1 pd4
-// HW32 -- Ye Olde Role Playing Game, Expanded
-// 2016-11-19
+// HW34 -- Ye Olde Role Playing Game, Unchained
+// 2016-11-23
 
 public class Archer extends Character{
     

@@ -1,3 +1,9 @@
+// Team double u
+// Gian Tricarico, Fabiola Radosav, James Zhang
+// APCS1 pd4
+// HW34 -- Ye Olde Role Playing Game, Unchained
+// 2016-11-23
+
 /*=============================================
   class YoRPG -- Driver file for Ye Olde Role Playing Game.
   Simulates monster encounters of a wandering adventurer.

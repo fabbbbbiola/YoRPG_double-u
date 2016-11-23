@@ -20,11 +20,18 @@ public class Rogue extends Character{
         // ATTRATING = attRating;
     }
     
-    public static String about() {
+    public String about() {
         information = "Rogue is a fictional superhero usually associated with ";
         information += "the X-Men owned by Marvel Comics.";
         return information;
     }
-    
+    public void specialize() {
+	defense = 25;
+	attRating = 2.8;
+    }
+    public void normalize() {
+	defense = 50;
+	attRating = 1.5;
+    }
 
 }

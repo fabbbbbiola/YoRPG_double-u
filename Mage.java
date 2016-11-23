@@ -19,11 +19,10 @@ public class Mage extends Character{
         // DEFENSE = defense;
         // ATTRATING = attRating;
     }
-    public static String getInfo() {
-        String s;
-        s = "The Mage possesses knowledge of the arcane arts, a magical ";
-        s += "staff, and a cool hat.";
-        return s;
+    public String about() {
+        information = "The Mage possesses knowledge of the arcane arts, a ";
+        information += "magical staff, and a cool hat.";
+        return information;
     }
     
 

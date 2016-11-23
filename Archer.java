@@ -25,7 +25,14 @@ public class Archer extends Character{
         information += "arrows from above.";
         return information;
     }
-    
+    public void specialize() {
+	defense = 35;
+	attRating = 1.9;
+    }
+    public void normalize() {
+	defense = 70;
+	attRating = 1;
+    }
 
     
 

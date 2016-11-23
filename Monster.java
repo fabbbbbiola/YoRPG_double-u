@@ -12,9 +12,9 @@ public class Monster extends Character{
 
     public Monster() {
 
-        HP = 100;
+        HP = 150;
         strength = 20 + (int)(Math.random()*45); //20 thru 65
-        defense = 20 + (int)(Math.random()*45);
+        defense = 20
         attRating = 1;
     }
     
@@ -40,5 +40,15 @@ public class Monster extends Character{
         }
         c.lowerHP(damage);
         return damage;
+    }
+
+    public void specialize() {
+	defense = 10;
+	attRating = 2;
+    }
+
+    public void normalize() {
+	defense = 20;
+	attRating = 1;
     }
 } // end class Monster

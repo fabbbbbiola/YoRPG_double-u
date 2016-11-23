@@ -27,6 +27,9 @@ public class Warrior extends Character{
         information += "healthy heaping of courage.";
         return information;
     }
-    
+    public void specialize() {
+	defense = 20;
+	attRating = .75;
+    }
     
 }

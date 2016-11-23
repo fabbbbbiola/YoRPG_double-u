@@ -81,11 +81,11 @@ public class YoRPG
 	s = "Which path dost thou wish to take? (Choose your character ";
 	s += "and enter the number preceding its name)\n";
 
-	s += "\t1: Warrior -- " + Warrior.getInfo() + "\n";
-	s += "\t2: Mage -- " + Mage.getInfo() + "\n";
-	s += "\t3: Tank -- " + Tank.getInfo() + "\n";
-    s += "\t4: Rogue -- " + Rogue.getInfo() +"\n";
-	s += "\t5: Archer -- " + Archer.getInfo() + "\n";
+	s += "\t1: Warrior -- " + Warrior.about() + "\n";
+	s += "\t2: Mage -- " + Mage.about() + "\n";
+	s += "\t3: Tank -- " + Tank.about() + "\n";
+    s += "\t4: Rogue -- " + Rogue.about() +"\n";
+	s += "\t5: Archer -- " + Archer.about() + "\n";
 	s += "Selection: ";
 	System.out.print(s);
 	

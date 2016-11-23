@@ -19,7 +19,7 @@ public class Monster extends Character{
     }
     
     
-    public static String getInfo() {
+    public static String about() {
         String s;
         s = "The monster terrorizes and lays waste to the kingdom you ";
         s += "hold dear. Slay it.";

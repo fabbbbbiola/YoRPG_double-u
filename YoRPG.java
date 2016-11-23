@@ -87,11 +87,11 @@ public class YoRPG
 	s = "Which path dost thou wish to take? (Choose your character ";
 	s += "and enter the number preceding its name)\n";
 
-	s += "\t1: Warrior -- " + Warrior.about() + "\n";
-	s += "\t2: Mage -- " + Mage.about() + "\n";
-	s += "\t3: Tank -- " + Tank.about() + "\n";
-    s += "\t4: Rogue -- " + Rogue.about() +"\n";
-	s += "\t5: Archer -- " + Archer.about() + "\n";
+	s += "\t1: Warrior\n";
+	s += "\t2: Mage\n";
+	s += "\t3: Tank\n";
+    s += "\t4: Rogue\n";
+	s += "\t5: Archer\n";
 	s += "Selection: ";
 	System.out.print(s);
 	
@@ -100,22 +100,28 @@ public class YoRPG
 	    choice = Integer.parseInt( in.readLine() );
 	    if ( choice == 5 ) {
 	        pat = new Archer( name );
+		System.out.println( ((Archer)pat).about() );
 	    }
 	    else if ( choice == 4 ) {
 	        pat = new Rogue( name );
+		System.out.println( ((Rogue)pat).about() );
 	    }
 	    else if ( choice == 3 ) {
 	        pat = new Tank( name );
+		System.out.println( ((Tank)pat).about() );
 	    }
 	    else if ( choice == 2 ) {
 	        pat = new Mage( name );
+		System.out.println( ((Mage)pat).about() );
 	    }
 	    else {
 	        pat = new Warrior( name );
+		System.out.println( ((Warrior)pat).about() );
 	    }
 	}
 	catch ( IOException e) {
 	    pat = new Warrior( name );
+	    System.out.println( ((Warrior)pat).about() );
 	}
 
     }//end newGame()

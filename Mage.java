@@ -16,8 +16,8 @@ public class Mage extends Character{
         strength = 60;
         defense = 60;
         attRating = 1.3;
-        DEFENSE = defense;
-        ATTRATING = attRating;
+        // DEFENSE = defense;
+        // ATTRATING = attRating;
     }
     public static String getInfo() {
         String s;

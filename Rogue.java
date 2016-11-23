@@ -16,15 +16,14 @@ public class Rogue extends Character{
         strength = 80;
         defense = 50;
         attRating = 1.5;
-        DEFENSE = defense;
-        ATTRATING = attRating;
+        // DEFENSE = defense;
+        // ATTRATING = attRating;
     }
     
-    public static String getInfo() {
-        String s;
-        s = "Rogue is a fictional superhero usually associated with the X-Men ";
-        s += "owned by Marvel Comics.";
-        return s;
+    public static String about() {
+        information = "Rogue is a fictional superhero usually associated with ";
+        information += "the X-Men owned by Marvel Comics.";
+        return information;
     }
     
 

@@ -31,5 +31,9 @@ public class Warrior extends Character{
 	defense = 20;
 	attRating = .75;
     }
+    public void normalize() {
+	defense = 40;
+	attRating = 0.4;
+    }
     
 }

@@ -60,22 +60,37 @@ We never used this variable:
 	
     }
     
+<<<<<<< HEAD
     public abstract void specialize(); /* {
+=======
+    public abstract void specialize() {
+>>>>>>> 98e3e2ed5693fd1a34974b596bf4e8bad8ca572a
         
         attRating = ATTRATING*(Math.random()+1.0);
 	    defense = DEFENSE*(int)(Math.random()+1.0);
        
 	    } */
     
+<<<<<<< HEAD
     public abstract void normalize(); /* {
+=======
+    public abstract void normalize() {
+>>>>>>> 98e3e2ed5693fd1a34974b596bf4e8bad8ca572a
         
         defense = DEFENSE;   
         attRating = ATTRATING;
         
 	} */
     
+<<<<<<< HEAD
     public abstract String about(); /* {
         //lets us write the about text in each specific class as we create them
         return ((Character)c).getInfo();
 	} */
+=======
+    public abstract String about(Character c){
+        //lets us write the about text in each specific class as we create them
+        return ((Character)c).getInfo();
+    }
+>>>>>>> 98e3e2ed5693fd1a34974b596bf4e8bad8ca572a
 }

@@ -11,19 +11,31 @@ public abstract class Character{
     protected int strength;
     protected int defense;
     protected double attRating;
-    
-    /*========================
-No longer necessary because each subclass will have its own normalize and
-specialize methods:
-
+ 
     protected int DEFENSE;
     protected double ATTRATING;
- ========================*/
-
     protected String information;
-   
-    
+    protected static int numPotions;
 
+
+    public static void gainPotion(){
+	numPotions += 1;
+    }
+
+    //this is something the final boss can do
+    public static void losePotions(){
+	numPotions = 0;
+    }
+
+    public void heal(){
+	if (numPotions > 0)
+	    { HP += (int)(HP/2);
+		System.out.println("You've healed!");
+		numPotions -=1;}
+	else {System.out.println("Oops! Looks like you're outta juice!");}
+        
+    }
+    
     public boolean isAlive(){
 
         return HP > 0;
@@ -57,22 +69,19 @@ specialize methods:
 	
     }
     
-    public abstract void specialize(); /* {
+    public void specialize() {
         
         attRating = ATTRATING*(Math.random()+1.0);
 	    defense = DEFENSE*(int)(Math.random()+1.0);
        
-	    } */
+	    } 
     
-    public abstract void normalize(); /* {
+    public void normalize() {
         
         defense = DEFENSE;   
         attRating = ATTRATING;
         
-	} */
+	} 
     
-    public abstract String about(); /* {
-        //lets us write the about text in each specific class as we create them
-        return ((Character)c).getInfo();
-	} */
+    public abstract String about(); 
 }

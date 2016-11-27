@@ -1,13 +1,12 @@
 
 # friendly-waddle
 rpg
+DONE/NOT DOING:
 get rid of specialize and normalize in monster
 description of attacks (story)
 third option: heal with potions 
 	restore_health method
 bag of potions; get potions after slaying monster
-int XP
-higher XP = harder monster
 monster has 50% chance of dropping potion 
 potion int - character
 heal HP method - character
@@ -15,6 +14,11 @@ if  (potion int > o) {
 optoin is is available
 potion -= 1 
 HP += (int) (Math.random(10, 50)}
+
+
+THINGS TO DO:
+int XP
+higher XP = harder monster
 meet villagers - trade, potions
 more xp = higher attack + defense
 XP gained depends on monster strength

@@ -17,8 +17,8 @@ public class Warrior extends Character{
         strength = 100;
         defense = 40;
         attRating = 0.4;
-        // DEFENSE = defense;
-        // ATTRATING = attRating;
+        DEFENSE = defense;
+      ATTRATING = attRating;
     }
         
     public String about() {
@@ -26,13 +26,6 @@ public class Warrior extends Character{
         information += "healthy heaping of courage.";
         return information;
     }
-    public void specialize() {
-	defense = 20;
-	attRating = .75;
-    }
-    public void normalize() {
-	defense = 40;
-	attRating = 0.4;
-    }
+  
     
 }

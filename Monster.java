@@ -12,8 +12,8 @@ public class Monster extends Character{
     public Monster() {
 
         HP = 150;
-        strength = 20 + (int)(Math.random()*45); //20 thru 65
-        defense = 20;
+        strength = 20 + (int)(Math.random()*60); //20 thru 65
+        defense = 70;
         attRating = 1;
     }
     
@@ -40,13 +40,11 @@ public class Monster extends Character{
         return damage;
     }
 
-    public void specialize() {
-	defense = 10;
-	attRating = 2;
+    public static boolean dropPotion(){
+	if ((int)(Math.random()*10) > 5)
+	    {numPotions += 1;
+		return true;}
+	return false;
     }
 
-    public void normalize() {
-	defense = 20;
-	attRating = 1;
-    }
 } // end class Monster

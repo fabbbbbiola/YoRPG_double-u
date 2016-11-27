@@ -151,25 +151,39 @@ public class YoRPG
 		// If you land a hit, you incur greater damage,
 		// ...but if you get hit, you take more damage.
 		try {
-		    System.out.println( "\nDo you feel lucky?" );
-		    System.out.println( "\t1: Nay.\n\t2: Aye!" );
+		    System.out.println( "\nWhat will you do?" );
+		    System.out.println( "\t1: Attack.\n\t2: Attack with Style!\n\t3: Drink up!" );
 		    i = Integer.parseInt( in.readLine() );
 		}
 		catch ( IOException e ) { }
 
+        
 		if ( i == 2 )
 		    pat.specialize();
-		else
+        
+		if ( i == 1 )
 		    pat.normalize();
 
 		d1 = pat.attack( smaug );
+
+		d2 = smaug.attack (pat);
+
+		if (i == 3)
+		    pat.heal();
+	   
 		d2 = smaug.attack( pat );
+        
+
+	      
+	       
 
 		System.out.println( "\n" + pat.getName() + " dealt " + d1 +
 				    " points of damage.");
 
 		System.out.println( "\n" + "Ye Olde Monster smacked " + pat.getName() +
 				    " for " + d2 + " points of damage.");
+	        
+		
 	    }//end while
 
 	    //option 1: you & the monster perish
@@ -183,6 +197,10 @@ public class YoRPG
 	    //option 2: you slay the beast
 	    else if ( !smaug.isAlive() ) {
 		System.out.println( "HuzzaaH! Ye olde monster hath been slain!" );
+		if (Monster.dropPotion())
+		    {Character.gainPotion();
+			System.out.println("A potion hath dropped from ye monster! ");}
+		
 		return true;
 	    }
 	    //option 3: the beast slays you

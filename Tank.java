@@ -16,21 +16,14 @@ public class Tank extends Character{
         strength = 90;
         defense = 150;
         attRating = 0.4;
-        // DEFENSE = defense;
-        // ATTRATING = attRating;
+        DEFENSE = defense;
+         ATTRATING = attRating;
     }
        
     public String about() {
 	information = "TANK TAKE ALL THE HIT.";
 	return information;
     }
-    public void specialize() {
-	defense = 75;
-	attRating = 0.75;
-    }
-    public void normalize() {
-	defense = 150;
-	attRating = 0.4;
-    }
+ 
 
 }

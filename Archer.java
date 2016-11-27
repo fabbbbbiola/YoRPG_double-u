@@ -4,7 +4,7 @@
 // HW34 -- Ye Olde Role Playing Game, Unchained
 // 2016-11-23
 
-public class Archer extends Character{
+public  class Archer extends Character{
     
     // Methods
 
@@ -16,22 +16,14 @@ public class Archer extends Character{
         strength = 70;
         defense = 70;
         attRating = 1;
-        // DEFENSE = defense;
-        // ATTRATING = attRating;
+        DEFENSE = defense;
+        ATTRATING = attRating;
     }        
         
     public String about() {
         information = "Always equiped with a handy bow, the archer rains down ";
         information += "arrows from above.";
         return information;
-    }
-    public void specialize() {
-	defense = 35;
-	attRating = 1.9;
-    }
-    public void normalize() {
-	defense = 70;
-	attRating = 1;
     }
 
     

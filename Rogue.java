@@ -16,8 +16,8 @@ public class Rogue extends Character{
         strength = 80;
         defense = 50;
         attRating = 1.5;
-        // DEFENSE = defense;
-        // ATTRATING = attRating;
+        DEFENSE = defense;
+        ATTRATING = attRating;
     }
     
     public String about() {
@@ -25,13 +25,6 @@ public class Rogue extends Character{
         information += "the X-Men owned by Marvel Comics.";
         return information;
     }
-    public void specialize() {
-	defense = 25;
-	attRating = 2.8;
-    }
-    public void normalize() {
-	defense = 50;
-	attRating = 1.5;
-    }
+
 
 }

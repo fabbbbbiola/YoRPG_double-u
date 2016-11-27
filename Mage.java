@@ -1,8 +1,8 @@
 // Team double u
 // Gian Tricarico, Fabiola Radosav, James Zhang
 // APCS1 pd4
-// HW32 -- Ye Olde Role Playing Game, Expanded
-// 2016-11-19
+// HW34 -- Ye Olde Role Playing Game, Unchained
+// 2016-11-23
 
 public class Mage extends Character{
     
@@ -16,15 +16,21 @@ public class Mage extends Character{
         strength = 60;
         defense = 60;
         attRating = 1.3;
-        DEFENSE = defense;
-        ATTRATING = attRating;
+        // DEFENSE = defense;
+        // ATTRATING = attRating;
     }
-    public static String getInfo() {
-        String s;
-        s = "The Mage possesses knowledge of the arcane arts, a magical ";
-        s += "staff, and a cool hat.";
-        return s;
+    public String about() {
+        information = "The Mage possesses knowledge of the arcane arts, a ";
+        information += "magical staff, and a cool hat.";
+        return information;
     }
-    
+    public void specialize() {
+	defense = 30;
+	attRating = 2.4;
+    }
+    public void normalize() {
+	defense = 60;
+	attRating = 1.3;
+    }
 
 }

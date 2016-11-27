@@ -1,3 +1,4 @@
+
 # friendly-waddle
 rpg
 get rid of specialize and normalize in monster
@@ -23,3 +24,8 @@ certain XP required to fight boss
 monsters get harder. 
 Final boss can take away potions, has specialize/normalize
 	and increased stats. Chooses attacks randomly
+=======
+# YoRPG_double-u
+The RPG prints the information from the about() method after the player has
+already selected the character.
+

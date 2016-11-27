@@ -1,9 +1,8 @@
 // Team double u
 // Gian Tricarico, Fabiola Radosav, James Zhang
 // APCS1 pd4
-// HW32 -- Ye Olde Role Playing Game, Expanded
-// 2016-11-19
-
+// HW34 -- Ye Olde Role Playing Game, Unchained
+// 2016-11-23
 
 public class Monster extends Character{
     
@@ -12,18 +11,17 @@ public class Monster extends Character{
 
     public Monster() {
 
-        HP = 100;
+        HP = 150;
         strength = 20 + (int)(Math.random()*45); //20 thru 65
-        defense = 20 + (int)(Math.random()*45);
+        defense = 20;
         attRating = 1;
     }
     
     
-    public static String getInfo() {
-        String s;
-        s = "The monster terrorizes and lays waste to the kingdom you ";
-        s += "hold dear. Slay it.";
-        return s;
+    public String about() {
+        information = "The monster terrorizes and lays waste to the kingdom ";
+        information += "you hold dear. Slay it.";
+        return information;
     }
     
     public String getName() {
@@ -40,5 +38,15 @@ public class Monster extends Character{
         }
         c.lowerHP(damage);
         return damage;
+    }
+
+    public void specialize() {
+	defense = 10;
+	attRating = 2;
+    }
+
+    public void normalize() {
+	defense = 20;
+	attRating = 1;
     }
 } // end class Monster

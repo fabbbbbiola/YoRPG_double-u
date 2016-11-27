@@ -1,20 +1,28 @@
 // Team double u
 // Gian Tricarico, Fabiola Radosav, James Zhang
 // APCS1 pd4
-// HW32 -- Ye Olde Role Playing Game, Expanded
-// 2016-11-19
+// HW34 -- Ye Olde Role Playing Game, Unchained
+// 2016-11-23
 
-
-public class Character{
+public abstract class Character{
 
     protected String name;
     protected int HP;
     protected int strength;
     protected int defense;
     protected double attRating;
+    
+    /*========================
+No longer necessary because each subclass will have its own normalize and
+specialize methods:
+
     protected int DEFENSE;
     protected double ATTRATING;
+ ========================*/
+
     protected String information;
+   
+    
 
     public boolean isAlive(){
 
@@ -49,22 +57,22 @@ public class Character{
 	
     }
     
-    public abstract void specialize() {
+    public abstract void specialize(); /* {
         
         attRating = ATTRATING*(Math.random()+1.0);
 	    defense = DEFENSE*(int)(Math.random()+1.0);
        
-    }
+	    } */
     
-    public abstract void normalize() {
+    public abstract void normalize(); /* {
         
         defense = DEFENSE;   
         attRating = ATTRATING;
         
-    }
+	} */
     
-    public abstract String about(Character c){
+    public abstract String about(); /* {
         //lets us write the about text in each specific class as we create them
         return ((Character)c).getInfo();
-    }
+	} */
 }

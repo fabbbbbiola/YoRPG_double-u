@@ -1,8 +1,8 @@
 // Team double u
 // Gian Tricarico, Fabiola Radosav, James Zhang
 // APCS1 pd4
-// HW32 -- Ye Olde Role Playing Game, Expanded
-// 2016-11-19
+// HW34 -- Ye Olde Role Playing Game, Unchained
+// 2016-11-23
 
 public class Tank extends Character{
     
@@ -16,12 +16,21 @@ public class Tank extends Character{
         strength = 90;
         defense = 150;
         attRating = 0.4;
-        DEFENSE = defense;
-        ATTRATING = attRating;
+        // DEFENSE = defense;
+        // ATTRATING = attRating;
     }
        
-    public static String getInfo() {   return "TANK TAKE ALL THE HIT.";   
+    public String about() {
+	information = "TANK TAKE ALL THE HIT.";
+	return information;
     }
-    
+    public void specialize() {
+	defense = 75;
+	attRating = 0.75;
+    }
+    public void normalize() {
+	defense = 150;
+	attRating = 0.4;
+    }
 
 }
